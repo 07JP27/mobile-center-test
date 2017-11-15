@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using Xamarin.Forms;
 
 namespace MobileCenterTest.Views
@@ -44,6 +45,9 @@ namespace MobileCenterTest.Views
 
         void ShowView6(object sender, System.EventArgs e)
         {
+            //クラッシュする
+            Crashes.GenerateTestCrash();
+
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "6" } });
             Navigation.PushAsync(new View6(), true);
         }

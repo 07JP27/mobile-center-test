@@ -5,7 +5,6 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{23E06048-A6A9-44C2-8E7E-DF9688854C30}</ProjectGuid>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UseMSBuildEngine>true</UseMSBuildEngine>
     <OutputType>Library</OutputType>
     <RootNamespace>MobileCenterTest</RootNamespace>
     <AssemblyName>MobileCenterTest</AssemblyName>
