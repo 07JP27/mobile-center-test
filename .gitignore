@@ -52,6 +52,7 @@ Mkfile.old
 dkms.conf
 
 .DS_Store
+MobileCenterTest.userprefs
 packages
 MobileCenterTest/bin
 MobileCenterTest/obj

@@ -1,5 +1,8 @@
 ﻿using Xamarin.Forms;
 using MobileCenterTest.Views;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace MobileCenterTest
 {
@@ -8,6 +11,7 @@ namespace MobileCenterTest
         public App()
         {
             InitializeComponent();
+            MobileCenter.Start("ios=%MOBILE_CENTER_IOS%;", typeof(Analytics), typeof(Crashes));
             MainPage = new NavigationPage(new TopView());
         }
 
