@@ -11,8 +11,12 @@ namespace MobileCenterTest
         public App()
         {
             InitializeComponent();
-            MobileCenter.Start("ios=%MOBILE_CENTER_IOS%;", typeof(Analytics), typeof(Crashes));
-            MainPage = new NavigationPage(new TopView());
+            MobileCenter.Start("ios=%MOBILE_CENTER_IOS%;",  typeof(Analytics), typeof(Crashes));
+            MainPage = new NavigationPage(new TopView())
+            {
+                BackgroundColor = Color.Gray,
+                BarBackgroundColor = Color.Gray
+            };
         }
 
         protected override void OnStart()

@@ -15,12 +15,13 @@ namespace MobileCenterTest.Views
 
         void ShowView1(object sender, System.EventArgs e)
         {
-            Analytics.TrackEvent("View", new Dictionary<string, string> {{ "View", "1" }});
+            Analytics.TrackEvent("View", new Dictionary<string, string> {{ "View", "1  " }});
             Navigation.PushAsync(new View1(), true);
         }
 
         void ShowView2(object sender, System.EventArgs e)
         {
+            Device.OpenUri(new Uri("http://xamarin.com/evolve"));
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "2" } });
             Navigation.PushAsync(new View2(), true);
         }
